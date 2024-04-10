@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0x;
+    background: fixed;
+}
+
+body {
+    max-height:100px;
+    background: linear-gradient(rgb(215, 245, 215), pink, lightgoldenrodyellow);
+}
+
+h1 {
+    color: purple;
+    text-align: center;
+    font-weight: 1000;
+    padding: 15px;
+    margin: 15px;
+    border: 6px solid green;
+    border-radius: 20%;
+}
+
+img {
+    /* height:30vh;
+    width:12vw; */
+    /* padding:10px; */
+    border: 10px solid red;
+    border-radius: 400% 400%;
+    animation: gradient 4s ease infinite;
+}
+
+@keyframes gradient {
+    15% {
+        border: 10px solid palevioletred;
+    }
+
+    30% {
+        border: 10px solid yellow;
+    }
+
+    45% {
+        border: 10px solid lightpink;
+    }
+
+    60% {
+        border: 10px solid powderblue;
+    }
+
+    80% {
+        border: 10px solid sandybrown;
+    }
+
+    100% {
+        border: 10px solid violet;
+    }
+
+}
+.choices, .score-board, .msg-container{
+    margin:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5rem;
+}
+.choice:hover{
+    border:4px solid black;
+    border-radius: 40%;
+    cursor:pointer;
+}
+.score{
+    font-weight: 800;
+    font-size:1.8rem;
+    margin:10px;
+    color:brown;
+}
+#msg{
+    background-color: burlywood;
+    font-weight: 800;
+    font-size:2.2rem;
+    margin:2px;
+    color: black;
+    border: 3px solid brown;
+    padding:5px 30px 5px 30px;
+    text-align: center;
+    border-radius: 10%;
+    margin:5px;
+
+}
+#msg:hover{
+    background-color: black;
+    color:white;
+    font-size:2.4rem;
+}
+@media  screen and (max-width:800px) {
+    .choices{
+        margin:0;
+        padding:0;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
